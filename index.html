@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#087b4b"><title>Навигатор магазина — Перекрёсток</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="topbar"><div class="shell topinner"><a class="brand" href="index.html"><span class="brandmark">✳</span> Навигатор покупок</a><nav class="nav"><a class="active" href="index.html">Карта магазина</a><a href="catalog.html">Каталог</a></nav></div></header>
+<main class="shell">
+<section class="hero"><div><div class="eyebrow">Пилотный проект · Москва</div><h1>Покупайте проще.<br>Находите быстрее.</h1><p>Карта торгового зала и маршрут по списку покупок. Выберите товары — навигатор покажет, в какие зоны зайти.</p></div><span class="tag">Перекрёсток · 1 этаж</span></section>
+<div class="panel" style="margin-bottom:18px"><div class="sectionhead"><h2>Список покупок</h2><span class="muted" style="font-size:12px">Разделяйте товары запятыми</span></div><div class="searchbar"><input id="shopping-list" placeholder="Например: молоко, бананы, хлеб, кофе"><button class="btn" id="make-route">Построить маршрут</button></div></div>
+<div class="layout">
+<section class="panel"><div class="sectionhead"><h2>Карта торгового зала</h2><span class="muted" style="font-size:11px">Нажмите на зону</span></div><div class="mapwrap">
+<svg class="storemap" viewBox="0 0 720 490" role="img" aria-label="Схематичная карта магазина">
+<path class="aisle" d="M55 235H665M360 45V440M55 405H665" fill="none"/>
+<g id="store-zones"></g><g id="route-line"></g>
+<circle cx="650" cy="452" r="10" fill="#087b4b"/><text x="635" y="476" text-anchor="end" fill="#087b4b" font-size="12" font-weight="700">ВХОД</text>
+</svg></div><div class="maplegend"><span><i class="dot" style="background:#dcefdc"></i>Свежие продукты</span><span><i class="dot" style="background:#f8e8c8"></i>Бакалея</span><span><i class="dot" style="background:#dfe9fa"></i>Напитки</span><span><i class="dot" style="background:#f5dfe4"></i>Бытовые товары</span></div>
+<div class="sectionhead"><h2>Зоны магазина</h2></div><div class="zonegrid" id="zone-list"></div></section>
+<aside class="panel side"><h2 id="detail-title">Ваш маршрут</h2><p id="detail-desc">Добавьте товары из списка, и здесь появится последовательность остановок.</p><label class="check"><input type="checkbox" id="checkout" checked> Завершить маршрут у касс</label><div class="route-result" id="route-result"><p class="muted">Пока маршрут не построен.</p></div><div class="demo">Демонстрационная схема. Реальные координаты, время переходов и каталог будут загружаться из Excel на следующем этапе.</div><a class="btn light" href="catalog.html" style="display:block;text-align:center">Открыть каталог товаров →</a></aside>
+</div>
+</main><footer class="footer"><div class="shell">Прототип навигации · Адрес магазина: Москва, ул. Миклухо-Маклая, 37 · Данные и цены демонстрационные</div></footer>
+<script src="app.js"></script></body></html>

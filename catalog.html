@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#087b4b"><title>Каталог товаров — Навигатор покупок</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="topbar"><div class="shell topinner"><a class="brand" href="index.html"><span class="brandmark">✳</span> Навигатор покупок</a><nav class="nav"><a href="index.html">Карта магазина</a><a class="active" href="catalog.html">Каталог</a></nav></div></header>
+<main class="shell"><section class="hero"><div><div class="eyebrow">Каталог магазина</div><h1>Что добавить<br>в корзину?</h1><p>Поиск по товарам и категориям. В карточке указана зона магазина, где искать товар.</p></div><span class="tag">Демо-каталог · можно заменить Excel</span></section>
+<div class="demo">Все товары, изображения и цены на этой странице — примеры для демонстрации интерфейса, а не актуальное предложение магазина.</div>
+<div class="catalogtools"><input id="product-search" type="search" placeholder="Найти товар, бренд или категорию…"><select id="category-filter"><option value="">Все категории</option></select><select id="zone-filter"><option value="">Все зоны</option></select><span class="count" id="product-count"></span></div>
+<div class="products" id="products"></div>
+<div class="panel" style="padding:18px;margin-bottom:38px"><div class="sectionhead" style="padding:0 0 10px"><h2>Обновить каталог из CSV</h2></div><p class="muted" style="font-size:12px">Экспортируйте лист Excel в CSV UTF-8 с колонками из шаблона. Загрузка заменит демонстрационный каталог только в этой вкладке браузера.</p><input type="file" id="csv-file" accept=".csv,text/csv"><a href="products-template.csv" download class="muted" style="font-size:12px;margin-left:10px">Скачать шаблон CSV</a></div>
+</main><footer class="footer"><div class="shell">Структура каталога подготовлена для импорта из Excel · Изменения в браузере не сохраняются на сервере</div></footer>
+<script src="catalog.js"></script></body></html>
